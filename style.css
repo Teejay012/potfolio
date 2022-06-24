@@ -99,3 +99,14 @@ a{
     0%, 100%{color: var(--red);}
     50%{color: transparent;}
 }
+
+
+@media(max-width: 400px){
+    .land h1{
+        margin-bottom: 160px;
+    }
+    .land .container{
+        width: 100%;
+        margin: 0;
+    }
+}
