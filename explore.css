@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+body{
+    font-family: "Open Sans",sans-serif;
+    background-color: var(--navy)
+}
+header{
+    height: 100px;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 40px;
+}
+header nav ul{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+header .ex-logo{
+    color: var(--green);
+    padding: 10px 15px;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+}
+header nav ul li{
+    margin: 0 15px;
+}
+header nav ul a{
+    color: var(--green);
+    transition: 0.25s;
+}
+header nav ul a:hover{
+    border-bottom: 1px solid var(--pink);
+    color: var(--pink);
+}
+.toggle{
+    display: none;
+}
+
+/* sec-1  */
+.exp-1 .container{
+    padding: 50px;
+}
+.exp-1 h1{
+    font-size: 80px;
+    letter-spacing: 2px;
+}
+.hi{
+    color: var(--lightest-slate);
+    animation: slideInFromRight 1.8s;
+}
+.web{
+    color: var(--dark-slate);
+    animation: slideInFromRight 2.3s;
+}
+.web:hover{
+    color: var(--lightest-slate);
+}
+.exp-1 p{
+    letter-spacing: 2px;
+    color: var(--light-slate);
+    margin: 30px 0 50px 0;
+    animation: slideInFromRight 2.7s;
+}
+.exp-1 a{
+    padding: 10px 30px;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    color: var(--blue);
+    font-size: 16;
+    font-weight: 600;
+    letter-spacing: 2px;
+    animation: exp-1-a 2s infinite;
+}
+
+/* Sec-2*/
+.exp-2{
+    padding: 40px;
+}
+.exp-2 .container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: var(--lightest-slate);
+}
+.exp-2 h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+    animation: slideInFromBottom 2s ease-in;
+}
+.exp-2 .text{
+    margin-top: 30px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.htm{
+    margin: 10px 0;
+}
+.code{
+}
+.code i{
+    margin-right: 10px;
+}
+.code i ion-icon{
+    color: var(--blue);
+}
+.exp-2 img{
+    position: relative;
+    top: 30px;
+}
+
+/*sec-3*/
+.exp-3{
+    padding: 40px;
+}
+.exp-3 .container{
+    text-align: center;
+    color: var(--lightest-slate);
+}
+.hc{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hc .c{
+    width: 15.8%;
+    margin: 10px;
+}
+.hc .h{
+    width: 22%;
+    margin: 10px;
+}
+
+.exp-4{
+    padding: 40px;
+}
+.exp-4 .container{
+    text-align: center;
+    color: var(--lightest-slate);
+}
+.exp-4 h1{
+    margin: 40px 0;
+}
+.exp-4 a{
+    padding: 10px 30px;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    color: var(--blue);
+    font-size: 16;
+    font-weight: 600;
+    letter-spacing: 2px;
+    animation: exp-1-a 2s infinite;
+}
+
+/*footer*/
+footer{
+    border-top: 1px solid var(--green);
+    padding: 20px 40px;
+}
+footer .container{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    color: var(--lightest-slate);
+}
+footer i ion-icon{
+    width: 20px;
+    height: 20px;
+    color: var(--lightest-slate);
+}
+footer i ion-icon:hover{
+    color: var(--pink);
+}
+.footer i{
+    margin: 0 10px;
+}
+
+
+
+
+
+@keyframes exp-1-a{
+    0%, 100%{color: var(--pink);}
+    0%, 100%{border-color: var(--pink);}
+    50%{color: var(--blue);}
+    50%{border-color: var(--blue);}
+}
+
+/*@keyframes web{
+    0%{width: 0ch;}
+    30%{width: 5ch;}
+    80%{width: 10ch;}
+    90%{width: 13ch;}
+    100%{width: 0ch;}
+}*/
+
+
+@media(max-width: 1000px){
+    .exp-2 .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .exp-2 img{
+        width: 60%;
+    }
+
+
+    .hc{
+        margin: 20px 0px;
+        flex-direction: column;
+    }
+    .hc .c{
+        width: 30.8%;
+        margin: 20px;
+    }
+    .hc .h{
+        width: 44%;
+        margin: 20px;
+    }
+}
+@media(max-width: 600px){
+    header nav ul{
+        display: none;
+    }
+    .toggle{
+        display: flex;
+        color: var(--green);
+    }
+    .toggle ion-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .exp-1 h1{
+        font-size: 50px;
+    }
+    .exp-1 .container{
+        text-align: center;
+    }
+    .exp-2 img{
+        width: 70%;
+    }
+    
+}
+
+@media(max-width: 400px){
+    header{
+        height: 80px;
+    }
+    header .ex-logo{
+        font-size: 20px;
+    }
+    .exp-1 h1{
+        font-size: 40px;
+    }
+    .exp-2 img{
+        width: 80%;
+    }
+    .code i{
+        font-size: 11px;
+    }
+
+    footer .container{
+        flex-direction: column;
+    }
+}
+
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideInFromRight{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideInFromTop{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes slideInFromBottom{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
