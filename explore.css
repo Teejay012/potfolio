@@ -153,13 +153,9 @@ header nav ul a:hover{
     align-items: center;
     justify-content: center;
 }
-.hc .c{
-    width: 15.8%;
-    margin: 10px;
-}
-.hc .h{
-    width: 22%;
-    margin: 10px;
+.hc img{
+    margin: 30px;
+    width: 20%;
 }
 
 .exp-4{
@@ -206,7 +202,46 @@ footer i ion-icon:hover{
     margin: 0 10px;
 }
 
-
+/*sec x*/
+.exp-x{
+    padding: 40px;
+}
+.exp-x .container{
+    text-align: center;
+    color: var(--lightest-slate);
+}
+.exp-x h2{
+    font-size: 30px;
+    padding-top: 30px;
+}
+.exp-x img{
+    width: 50%;
+    margin-right: 180px;
+    transition: 0.5s;
+}
+.exp-x img:hover{
+    transform: translateY(-20px);
+}
+.exp-x .work{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.exp-x .work h3,p{
+    line-height: 2;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+.work a{
+    padding: 10px 30px;
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    color: var(--blue);
+    font-size: 16;
+    font-weight: 600;
+    letter-spacing: 2px;
+    animation: exp-1-a 2s infinite;
+}
 
 
 
@@ -248,6 +283,14 @@ footer i ion-icon:hover{
         width: 44%;
         margin: 20px;
     }
+
+    .exp-x .work{
+        flex-direction: column;
+    }
+    .exp-x img{
+        margin-right: 0;
+        margin: 20px 0;
+    }
 }
 @media(max-width: 600px){
     header nav ul{
@@ -269,6 +312,9 @@ footer i ion-icon:hover{
     }
     .exp-2 img{
         width: 70%;
+    }
+    .exp-x img{
+        width: 75%;
     }
     
 }
@@ -292,6 +338,9 @@ footer i ion-icon:hover{
 
     footer .container{
         flex-direction: column;
+    }
+    .exp-x img{
+        width: 85%;
     }
 }
 
